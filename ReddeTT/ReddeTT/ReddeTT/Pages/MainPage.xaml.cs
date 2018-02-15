@@ -9,7 +9,14 @@ namespace ReddeTT.Pages
         public static MainPage Mainpage;
         public MainPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch (System.Exception ex)
+            {
+
+            }
         }
 
         protected override async void OnAppearing()

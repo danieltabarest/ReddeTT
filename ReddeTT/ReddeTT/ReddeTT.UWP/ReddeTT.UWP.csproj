@@ -7,8 +7,8 @@
     <ProjectGuid>{14A0D8B2-1459-4D93-9039-641484F8D459}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Redder.UWP</RootNamespace>
-    <AssemblyName>Redder.UWP</AssemblyName>
+    <RootNamespace>ReddeTT.UWP</RootNamespace>
+    <AssemblyName>ReddeTT.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>

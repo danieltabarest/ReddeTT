@@ -8,8 +8,8 @@
     <ProjectGuid>{44BE7802-AFDE-447E-947A-9F668419B74B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Redder</RootNamespace>
-    <AssemblyName>Redder</AssemblyName>
+    <RootNamespace>ReddeTT</RootNamespace>
+    <AssemblyName>ReddeTT</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
