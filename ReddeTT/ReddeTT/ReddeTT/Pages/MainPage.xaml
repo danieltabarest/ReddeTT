@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ReddeTT"
+             xmlns:helpers1="clr-namespace:ReddeTT.Helpers;assembly=ReddeTT"
+             x:Class="ReddeTT.Pages.MainPage">
+
+  <Grid BackgroundColor="#ecf0f1">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+  
+  <Image Grid.Row="0" Source="header.png" Aspect="AspectFit" />
+    
+  <StackLayout Grid.Row="1" Padding="20" VerticalOptions="Center">
+    <Label Text="ReddeTT" TextColor="#e74c3c" HorizontalTextAlignment="Center" FontSize="20"/>
+    <helpers1:CustomProgressBar x:Name="LoadingBar" />
+    <Label x:Name="LoadingLabel" TextColor="#c0392b" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="15"/>
+  </StackLayout>
+  </Grid>
+
+</ContentPage>

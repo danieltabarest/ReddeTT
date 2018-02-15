@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:ReddeTT.ViewModels;assembly=ReddeTT"
+             xmlns:helpers="clr-namespace:ReddeTT.Helpers;assembly=ReddeTT"
+             x:Class="ReddeTT.Pages.Initialization.BasicInitPage">
+  <ContentPage.BindingContext>
+    <viewModels:BasicInitViewModel x:Key="BasicInitViewModel"/>
+  </ContentPage.BindingContext>
+  
+  <Grid Padding="20">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <StackLayout Padding="20">
+      <Label Text="Welcome" FontSize="25" HorizontalOptions="Center"/>
+      <Label Text="{Binding User.Name}" FontSize="20" HorizontalOptions="Center"/>
+    </StackLayout>
+    <Label Text="Let's take a moment to run you through the basic configuration" Grid.Row="1"/>
+    <StackLayout Grid.Row="2">
+      <Label Text="Who are you interested to meet?"/>
+      <helpers:BindableRadioGroup ItemsSource="{Binding Interests}" VerticalOptions="Start" CheckedChanged="BindableRadioGroup_OnCheckedChanged"/>
+    </StackLayout>
+    <Button Text="Next" Grid.Row="3" HorizontalOptions="EndAndExpand" Clicked="Button_OnClicked"/>
+  </Grid>
+</ContentPage>

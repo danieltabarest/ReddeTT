@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Redder.Backend.Controllers
+namespace ReddeTT.Backend.Controllers
 {
     [Route("api/[controller]")]
     public class UserController : Controller
